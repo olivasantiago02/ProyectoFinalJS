@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/Fondov1.jpeg);
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agregamos sombra al header */
+  position: relative; /* Añadimos posición relativa para el posicionamiento del carrito */
+}
+
+header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px; /* Agregamos margen inferior al título */
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  width: calc(33.33% - 20px); /* Ancho de 33.33% para tres productos por fila */
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para el efecto hover */
+}
+
+.product:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el mouse */
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.product img {
+  max-width: 240px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: greenyellow;
+}
+
+/* Cambios para el diseño horizontal con Flexbox */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.product {
+  margin: 10px; /* Espacio entre los productos */
+}
+
+
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.section-title h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #777;
+}
+
+
+/* ... (rest of the CSS) ... */
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* ... (rest of the CSS) ... */
+
+#cart-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cart-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#cart-items {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.cart-item {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#cart {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%); /* Centramos horizontalmente */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#cart img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
