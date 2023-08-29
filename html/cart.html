@@ -10,7 +10,9 @@
 </head>
 <body>
     <header>
-        <h1>DressCode Creations</h1>
+        <a href="../html/index.html">
+            <h1>DressCode Creations</h1>
+        </a>
         <div id="cart">
             <span id="cart-count">0</span>
             <i class="fas fa-shopping-cart"></i>
@@ -23,7 +25,9 @@
     <div id="cart-section">
         <h2>Carrito de Compras</h2>
         <div id="cart-items">
-            <!-- Aquí se agregarán los productos del carrito -->
+            <!-- Botones para agregar y eliminar productos -->
+            <button class="remove-one">-</button>
+            <button class="add-one">+</button>
         </div>
         <div id="cart-controls">
             <button id="clear-cart">Vaciar Carrito</button>
@@ -32,6 +36,14 @@
             <p>Total: <span id="cart-total">$0.00</span></p>
             <button id="checkout-button">Realizar Compra</button>
         </div>
+    </div>
+
+    <div id="purchase-message" class="hidden3">
+        <h2>¡Compra Exitosa!</h2>
+        <p>Gracias por tu compra. Aquí están los productos que adquiriste:</p>
+        <div id="purchased-products"></div>
+        <!-- Mostrar la suma total -->
+        <div id="purchase-total"></div>
     </div>
 
     <footer class="footer">

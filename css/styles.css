@@ -17,6 +17,8 @@ header {
 header h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   margin-bottom: 30px; /* Agregamos margen inferior al título */
+  text-decoration: none;
+  color: #ece5e5;
 }
 
 
@@ -92,7 +94,6 @@ header h1 {
 }
 
 
-/* ... (rest of the CSS) ... */
 
 .footer {
   background-color: #333;
@@ -173,3 +174,39 @@ header h1 {
   padding: 2px 5px;
 }
 
+.hidden {
+  display: none;
+}
+
+
+.hidden3{
+  background-color: white;
+  padding: 20px;
+}
+
+/* Estilos para los botones "+" y "-" en el carrito */
+.cart-product .quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.cart-product .quantity-controls button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart-product .quantity-controls button:hover {
+  background-color: greenyellow;
+}
+
+.cart-product .quantity-controls .remove-one {
+  margin-right: 5px;
+}
+
+.cart-product .quantity-display {
+  margin: 0 10px;
+}
